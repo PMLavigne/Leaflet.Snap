@@ -551,7 +551,7 @@ L.Layer.include({
 L.Draw.Feature.GuidelineMixin = {
     _guide_initialize: function () {
         this.on('enabled', function () {
-            map._currentLDrawMarker = this;
+            this._map._currentLDrawMarker = this;
         }, this);
     },
 };
