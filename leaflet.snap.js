@@ -946,7 +946,7 @@ L.Snap.Gridlines =  L.Class.extend({
 
     calcDimensions: function(options) {
         var defaultOptions = this.defaultOptions;
-
+        var map = this._map;
         // lmfao, this is completely absurd but I'm so tired of hunting down bugs that turn
         // out to be because i passed in 'numGridLines' instead of 'numGridlines' !!!
         // reminder to take it out later...
